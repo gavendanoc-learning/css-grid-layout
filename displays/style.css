@@ -1,0 +1,22 @@
+body {
+  font-family: Arial;
+}
+
+.container {
+  display: grid;
+  grid-template: 300px 150px / 25% 200px 25%;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 10px;
+  border: 1px solid lightcoral;
+}
+
+.item:nth-of-type(4) {
+  background: blue;
+  overflow: auto;
+  /* display: subgrid; Doesn't work */
+  /* display: inline-grid; Doesn't work*/
+  grid-template: 100px 150px / 25% 200px 25%;
+}
