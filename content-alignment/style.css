@@ -1,0 +1,27 @@
+body {
+  font-family: Arial;
+}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  height: 100vh;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(4, 100px);
+  
+  /* justify-content: horizontal start end center stretch space-around  space-between space-evenly */
+  /* align-content: vertical start end center stretch space-around  space-between space-evenly */
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  
+}
+.item {
+  background-color: lightblue;
+  padding: 10px;
+  border: 1px solid lightcoral;
+}
+.item:nth-of-type(5){
+  /* align-self: start;
+  justify-self: start; */
+  /* background: lightgreen; */
+}
